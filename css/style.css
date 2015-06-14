@@ -1,0 +1,118 @@
+body {
+	/*background-color: #B9BFC7; */
+	background-image: url(../images/bg.jpg);
+	/* .. allows you to leave CSS folder and go back and then bring up images folder. to go back 2 boxes, ../../ */ 
+
+	background-size: cover;
+
+	background-attachment: fixed;
+	/*when user scrolls the content, background photo is fixed*/
+
+	font-family: helvetica, arial, sans-serif;
+	/* this gives you fallbacks for fonts*/
+	/*can make margin = 0 so that theres no margin at the top*/
+}
+
+.important {
+	font-style: italic;
+}
+
+.main {
+	width: 600px; 
+	margin: 0 auto;
+	/*this gives it equal width on both sides*/
+	padding: 40px;
+	/*so that the content isnt hugging the left hand side*/
+	padding-top: 15px;
+	background: rgba(255,255,255,0.7);
+	/*the last bit is for opacity*/
+}
+
+h1,
+h3 {
+	font-family: 'Pacifico', cursive;
+}
+
+h1 {
+	text-align: center;
+
+	margin: 0px;
+
+	font-size: 30px;
+
+	/*difficult to make it automatic - if you put auto, it become s ful widht. Display: inline-bloc; does this*/
+	/*have to include extra element in HTML 'h1 span' and then define it*/
+
+
+
+}
+
+h2 {
+	text-align: center;
+
+	letter-spacing: 5px;
+
+	font-weight: normal;
+
+	font-style: italic;
+
+	text-transform: uppercase;
+}
+
+h3 {
+	margin-bottom: 0px;
+	cursor: pointer;
+	/*changes curser to being a pointer*/
+}
+
+h3:hover {
+	text-decoration: underline;
+}
+
+h3:after {
+	content: ' +';
+}
+
+.open:after {
+		content: ' -';
+}
+
+img {
+	border: 15px dotted #5C328F;
+
+	border-radius: 50%;
+	/*making it round*/
+
+	margin: 0 auto;
+	/* no margins on top/bottom but automatic width but need to display as block*/
+	
+	display: block;
+}
+
+p,
+ul, 
+ol {
+	line-height: 1.4;
+	list-style: none;
+	/*the ol boxes the margin, so still have a margin of padding on the righ*/
+	padding-left: 0;
+	font-family: serif;
+	/*impacted all of p / ul / ol given what we've written*/
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #5C328F;
+	font-weight: bold;
+}
+
+a:hover,
+a:focus {
+	/*this allows it to change when user is hovering over it*/
+	text-decoration: underline;
+	color: blue;
+}
+
+
